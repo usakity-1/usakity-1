@@ -1,0 +1,21 @@
+{
+  "name": "Default Codespace Developement Enviroment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "Customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.colorTheme": "Visual Studio Dark",
+        "editor.formatOnSave": true
+      },
+      "extentions":[
+        "ms-dotnettools.csdevkit",
+        "github.copilot",
+        "github.copilot-azure",
+        "ms-azuretools.vscode-bicep",
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+  "postCreateCommand": "dotnet restore",
+  "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
+}
